@@ -1,10 +1,10 @@
-import { AppPage } from './app.po';
+import { IdesmacPage } from './app.po';
 
-describe('page-idesmac App', () => {
-  let page: AppPage;
+describe('idesmac App', () => {
+  let page: IdesmacPage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new IdesmacPage();
   });
 
   it('should display welcome message', () => {
