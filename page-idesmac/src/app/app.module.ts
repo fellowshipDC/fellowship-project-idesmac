@@ -11,6 +11,7 @@ import { HttpModule } from '@angular/http';
 import { SecunoComponent } from './secuno/secuno.component';
 import { SecdosComponent } from './secdos/secdos.component';
 import { DestacadoComponent } from './destacado/destacado.component';
+import { DifusionComponent } from './difusion/difusion.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DestacadoComponent } from './destacado/destacado.component';
     HeaderComponent,
     SecunoComponent,
     SecdosComponent,
-    DestacadoComponent
+    DestacadoComponent,
+    DifusionComponent
   ],
   imports: [
     BrowserModule,
