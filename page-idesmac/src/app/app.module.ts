@@ -12,6 +12,7 @@ import { SecunoComponent } from './secuno/secuno.component';
 import { SecdosComponent } from './secdos/secdos.component';
 import { DestacadoComponent } from './destacado/destacado.component';
 import { DifusionComponent } from './difusion/difusion.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DifusionComponent } from './difusion/difusion.component';
     SecunoComponent,
     SecdosComponent,
     DestacadoComponent,
-    DifusionComponent
+    DifusionComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
