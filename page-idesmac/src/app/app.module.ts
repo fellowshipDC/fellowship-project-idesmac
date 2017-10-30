@@ -13,6 +13,8 @@ import { SecdosComponent } from './secdos/secdos.component';
 import { DestacadoComponent } from './destacado/destacado.component';
 import { DifusionComponent } from './difusion/difusion.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { OficinasComponent } from './oficinas/oficinas.component';
+import { SuscripcionComponent } from './suscripcion/suscripcion.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ContactoComponent } from './contacto/contacto.component';
     SecdosComponent,
     DestacadoComponent,
     DifusionComponent,
-    ContactoComponent
+    ContactoComponent,
+    OficinasComponent,
+    SuscripcionComponent
   ],
   imports: [
     BrowserModule,
