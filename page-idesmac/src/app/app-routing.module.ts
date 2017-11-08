@@ -5,7 +5,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactoComponent} from './contacto/contacto.component';
-
+import { UbicacionComponent} from './ubicacion/ubicacion.component';
 const routes: Routes = [
   {
     path: '',
@@ -19,6 +19,10 @@ const routes: Routes = [
   {
     path: 'contacto',
     component: ContactoComponent
+  },
+  {
+    path: 'dondestamos',
+    component: UbicacionComponent
   }
 ];
 

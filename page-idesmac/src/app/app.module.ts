@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { MapBoxModule } from 'angular-mapbox/module';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -15,6 +17,7 @@ import { DifusionComponent } from './difusion/difusion.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { OficinasComponent } from './oficinas/oficinas.component';
 import { SuscripcionComponent } from './suscripcion/suscripcion.component';
+import { UbicacionComponent } from './ubicacion/ubicacion.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +32,14 @@ import { SuscripcionComponent } from './suscripcion/suscripcion.component';
     DifusionComponent,
     ContactoComponent,
     OficinasComponent,
-    SuscripcionComponent
+    SuscripcionComponent,
+    UbicacionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpModule
+    HttpModule,
+    MapBoxModule.forRoot('pk.eyJ1IjoiZGlmdXNpb24taWRlc21hYyIsImEiOiJjajlmc3kxZG8ycWQxMndzNDJ5OXhxam4wIn0.jaLCQVcQqbBi_EpmYDp0FQ')
   ],
   providers: [],
   bootstrap: [AppComponent]
