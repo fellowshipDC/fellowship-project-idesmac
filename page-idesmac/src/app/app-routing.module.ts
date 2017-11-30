@@ -9,6 +9,9 @@ import { UbicacionComponent} from './ubicacion/ubicacion.component';
 import { EventosComponent} from './eventos/eventos.component';
 import { IdentidadComponent } from './identidad/identidad.component';
 import { MisionComponent } from './mision/mision.component';
+import { VisibilidadComponent } from './visibilidad/visibilidad.component';
+import { PrensaComponent } from './prensa/prensa.component';
+import { PublicacionesComponent } from './publicaciones/publicaciones.component';
 
 const routes: Routes = [
   {
@@ -30,6 +33,18 @@ const routes: Routes = [
   {
     path: 'mision',
     component: MisionComponent
+  },
+  {
+    path: 'visibilidad',
+    component: VisibilidadComponent
+  },
+  {
+    path: 'publicaciones',
+    component: PublicacionesComponent
+  },
+  {
+    path: 'prensa',
+    component: PrensaComponent
   },
   {
     path: '',

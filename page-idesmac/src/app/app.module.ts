@@ -29,6 +29,10 @@ import { MisionComponent } from './mision/mision.component';
 import { HistoriaComponent } from './historia/historia.component';
 import { IdentbannComponent } from './identbann/identbann.component';
 import { IdentcardComponent } from './identcard/identcard.component';
+import { VisibilidadComponent } from './visibilidad/visibilidad.component';
+import { PrensaComponent } from './prensa/prensa.component';
+import { PublicacionesComponent } from './publicaciones/publicaciones.component';
+import { LateralPubComponent } from './lateral-pub/lateral-pub.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +55,11 @@ import { IdentcardComponent } from './identcard/identcard.component';
     MisionComponent,
     HistoriaComponent,
     IdentbannComponent,
-    IdentcardComponent
+    IdentcardComponent,
+    VisibilidadComponent,
+    PrensaComponent,
+    PublicacionesComponent,
+    LateralPubComponent
   ],
   imports: [
     BrowserModule,

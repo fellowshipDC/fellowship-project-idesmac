@@ -26,6 +26,7 @@
     "angular-mapbox": "^0.1.6",
     "bootstrap": "^4.0.0-alpha.6",
     "core-js": "^2.4.1",
+    "d3": "^4.12.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "mapbox-gl": "^0.41.0",
