@@ -13,7 +13,7 @@ export class PublicacionesComponent implements OnInit {
   data: any;
   constructor(private http: Http) { }
   getData () {
-    this.http.get('http://localhost:8888/wp-json/wp/v2/publicaciones')
+    this.http.get('http://localhost:8888/wp-json/wp/v2/publicaciones?_embed?per_page=100')
     .subscribe((res: Response) => this.data = res.json()
   );
   }

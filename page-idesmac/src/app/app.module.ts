@@ -33,6 +33,10 @@ import { VisibilidadComponent } from './visibilidad/visibilidad.component';
 import { PrensaComponent } from './prensa/prensa.component';
 import { PublicacionesComponent } from './publicaciones/publicaciones.component';
 import { LateralPubComponent } from './lateral-pub/lateral-pub.component';
+import { UsumacintaComponent } from './usumacinta/usumacinta.component';
+import { PartcomunitariaComponent } from './partcomunitaria/partcomunitaria.component';
+import { OrdenamientoComponent } from './ordenamiento/ordenamiento.component';
+
 
 @NgModule({
   declarations: [
@@ -59,7 +63,10 @@ import { LateralPubComponent } from './lateral-pub/lateral-pub.component';
     VisibilidadComponent,
     PrensaComponent,
     PublicacionesComponent,
-    LateralPubComponent
+    LateralPubComponent,
+    UsumacintaComponent,
+    PartcomunitariaComponent,
+    OrdenamientoComponent
   ],
   imports: [
     BrowserModule,
