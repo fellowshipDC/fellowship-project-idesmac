@@ -12,8 +12,9 @@
     </div>
     <div class="col-8">
       <div class="row">
-        <div class="col-4" *ngFor="let p of data">
-          <img src="{{p?._embedded['wp:featurededia'][0]['media_details']['file']}}">
+        <div class="col-4" *ngFor="let d of data">
+          <img src="{{d['_embedded']['wp:featuredmedia'][0]['source_url']}}">
+          <p>{{d.title.rendered}}</p>
         </div>
       </div>
       </div> 
