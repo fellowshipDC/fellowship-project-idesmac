@@ -36,6 +36,8 @@ import { LateralPubComponent } from './lateral-pub/lateral-pub.component';
 import { UsumacintaComponent } from './usumacinta/usumacinta.component';
 import { PartcomunitariaComponent } from './partcomunitaria/partcomunitaria.component';
 import { OrdenamientoComponent } from './ordenamiento/ordenamiento.component';
+import { RedesComponent } from './redes/redes.component';
+import { ConocenosComponent } from './conocenos/conocenos.component';
 
 
 @NgModule({
@@ -66,7 +68,9 @@ import { OrdenamientoComponent } from './ordenamiento/ordenamiento.component';
     LateralPubComponent,
     UsumacintaComponent,
     PartcomunitariaComponent,
-    OrdenamientoComponent
+    OrdenamientoComponent,
+    RedesComponent,
+    ConocenosComponent
   ],
   imports: [
     BrowserModule,

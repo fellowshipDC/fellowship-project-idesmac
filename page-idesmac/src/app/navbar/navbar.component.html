@@ -1,13 +1,27 @@
 <!-- Image and text -->
-<nav class="navbar navbar-light bg-faded sticky-top">
-    <a class="navbar-brand" href="#">
-      <img src="/assets/logo.png" width="160" height="100" class="d-inline-block align-top" alt="">
-    </a>
-    <div class="row">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <img class= "img-fluid text-center" src="http://localhost:8888/wp-content/uploads/2017/12/cabecera.png">
+    </div>
+  </div>
+</div>
+
+<nav class="navbar collapse navbar-expand-lg navbar-light bg-faded sticky-top">
+    <div class="row menu collapse navbar-collapse">
+      <a routerLink="home" class="nav-link" href="#">Inicio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
       <a routerLink="identidad" class="nav-link" href="#">Identidad</a>
       <a routerLink="dondestamos" class="nav-link" href="#">Qué hacemos</a>
       <a class="nav-link" href="#">Proyectos</a>
       <a routerLink="publicaciones" class="nav-link" href="#">Publicaciones</a>
       <a routerLink="contacto" class="nav-link" href="#">Contacto</a>
+      <svg width="100" height="30"><rect width="20" height="30" style="fill:rgb(0, 0, 0)" /></svg>
     </div>
   </nav>
+<!-- prueba -->
+
+
+
