@@ -15,6 +15,7 @@ import { PublicacionesComponent } from './publicaciones/publicaciones.component'
 import { UsumacintaComponent } from './usumacinta/usumacinta.component';
 import { PartcomunitariaComponent } from './partcomunitaria/partcomunitaria.component';
 import { OrdenamientoComponent } from './ordenamiento/ordenamiento.component';
+import { SecdosComponent } from './secdos/secdos.component';
 
 const routes: Routes = [
   {
@@ -56,6 +57,10 @@ const routes: Routes = [
   {
     path: 'prensa',
     component: PrensaComponent
+  },
+  {
+    path: 'lineas',
+    component: SecdosComponent
   },
   {
     path: '',
