@@ -38,6 +38,9 @@ import { PartcomunitariaComponent } from './partcomunitaria/partcomunitaria.comp
 import { OrdenamientoComponent } from './ordenamiento/ordenamiento.component';
 import { RedesComponent } from './redes/redes.component';
 import { ConocenosComponent } from './conocenos/conocenos.component';
+import { MicrositioComponent } from './micrositio/micrositio.component';
+import { VideoComponent } from './video/video.component';
+import { ColaboradoresComponent } from './colaboradores/colaboradores.component';
 
 
 @NgModule({
@@ -70,7 +73,10 @@ import { ConocenosComponent } from './conocenos/conocenos.component';
     PartcomunitariaComponent,
     OrdenamientoComponent,
     RedesComponent,
-    ConocenosComponent
+    ConocenosComponent,
+    MicrositioComponent,
+    VideoComponent,
+    ColaboradoresComponent
   ],
   imports: [
     BrowserModule,
