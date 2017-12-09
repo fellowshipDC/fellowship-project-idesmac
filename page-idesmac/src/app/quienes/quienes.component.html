@@ -4,9 +4,7 @@
                 <h1>{{data?.title.rendered}}</h1>
         </div>
     </div>
-    <div class="row" id="innerHTMLtxt">
-    <div class="col-10">
-                {{data?.content.rendered}}
-        </div>
+    <div class="row">
+    <div class="col-10" [innerHtml]="data?.content.rendered"></div>
     </div>
 </div>
