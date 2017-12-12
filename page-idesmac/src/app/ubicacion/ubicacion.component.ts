@@ -22,20 +22,14 @@ mymap;
     accessToken: 'pk.eyJ1IjoiZGlmdXNpb24taWRlc21hYyIsImEiOiJjajlmc3kxZG8ycWQxMndzNDJ5OXhxam4wIn0.jaLCQVcQqbBi_EpmYDp0FQ'
 }).addTo(this.mymap);
 
-var marker = L.marker([16.7, -92.67]).addTo(this.mymap);
-var circle = L.circle([16.7415623, -92.6363339], {
+var circle = L.circle([16.7, -92.67], {
   color: 'red',
   fillColor: '#f03',
   fillOpacity: 0.5,
   radius: 500
 }).addTo(this.mymap);
 
-var polygon = L.polygon([
-  [-92.075503, 17.265158],
-  [-92.074884, 17.264861],
-  [-92.073793, 17.265071],
-  [-92.073148,17.264696]
-]).addTo(this.mymap);
+circle.bindPopup("<b>Oficina IDESMAC</b><br>Pincipal.").openPopup();
 }
 
   ngOnInit() {

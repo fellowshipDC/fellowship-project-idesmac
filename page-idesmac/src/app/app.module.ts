@@ -41,6 +41,7 @@ import { ConocenosComponent } from './conocenos/conocenos.component';
 import { MicrositioComponent } from './micrositio/micrositio.component';
 import { VideoComponent } from './video/video.component';
 import { ColaboradoresComponent } from './colaboradores/colaboradores.component';
+import { MapaComponent } from './mapa/mapa.component';
 
 
 @NgModule({
@@ -76,7 +77,8 @@ import { ColaboradoresComponent } from './colaboradores/colaboradores.component'
     ConocenosComponent,
     MicrositioComponent,
     VideoComponent,
-    ColaboradoresComponent
+    ColaboradoresComponent,
+    MapaComponent
   ],
   imports: [
     BrowserModule,
