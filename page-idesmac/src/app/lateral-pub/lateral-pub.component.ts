@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Http, Response } from '@angular/http';
 
 @Component({
   selector: 'app-lateral-pub',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lateral-pub.component.styl']
 })
 export class LateralPubComponent implements OnInit {
+  q: string;
+  publicacion: object[];
+  response: object;
 
-  constructor() { }
-
+  constructor(private http: Http) { }
   ngOnInit() {
+
   }
 
 }

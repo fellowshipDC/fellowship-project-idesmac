@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-partcomunitaria',
@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PartcomunitariaComponent implements OnInit {
 
+  @Input()
+  url: string;
+
+  @Input()
+  ref: string;
   constructor() { }
 
   ngOnInit() {

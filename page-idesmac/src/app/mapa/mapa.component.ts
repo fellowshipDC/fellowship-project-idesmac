@@ -14,28 +14,28 @@ municipios: any;
 
   ngOnInit() {
     mapboxgl.accessToken = 'pk.eyJ1IjoiZGlmdXNpb24taWRlc21hYyIsImEiOiJjajlmc3kxZG8ycWQxMndzNDJ5OXhxam4wIn0.jaLCQVcQqbBi_EpmYDp0FQ';
-    let map = new mapboxgl.Map({
+    const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/difusion-idesmac/cj9ixx4bfb9nn2smyg6ptmkto'
     });
     map.on ('load', function() {
-        var layers = ['0-10', '10-20', '20-50', '50-100', '100-200', '200-500', '500-1000', '1000+'];
-        var colors = ['#FFEDA0', '#FED976', '#FEB24C', '#FD8D3C', '#FC4E2A', '#E31A1C', '#BD0026', '#800026'];
+        const layers = ['0-10', '10-20', '20-50', '50-100', '100-200', '200-500', '500-1000', '1000+'];
+        const colors = ['#FFEDA0', '#FED976', '#FEB24C', '#FD8D3C', '#FC4E2A', '#E31A1C', '#BD0026', '#800026'];
 
-        for ( var i = 0; i < layers.length; i++) {
-          var layer = layers[i];
-          var color = colors[i];
-          var item = document.createElement('div');
-          var key = document.createElement('span');
-          key.className = 'legend-key';
-          key.style.backgroundColor = color;
+        //for ( let i = 0; i < layers.length; i++) {
+          //const layer = layers[i];
+          //const color = colors[i];
+          //const item = document.createElement('div');
+          //const key = document.createElement('span');
+          //key.className = 'legend-key';
+          //key.style.backgroundColor = color;
 
-          var value = document.createElement('span');
-          value.innerHTML = layer;
-          item.appendChild(key);
-          item.appendChild(value);
-          legend.appendChild(item);
-        }
+          //const value = document.createElement('span');
+          //value.innerHTML = layer;
+          //item.appendChild(key);
+          //item.appendChild(value);
+          //legend.appendChild(item);
+       // }
 
         map.on('mousemove', function(e) {
           const municipios = map.queryRenderedFeatures(e.point, {
