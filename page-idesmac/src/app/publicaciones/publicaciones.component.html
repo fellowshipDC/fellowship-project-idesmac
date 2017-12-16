@@ -17,7 +17,8 @@
                 <input (keyup)="onKey($event)" type="text" class="form-control" placeholder="Buscar por... autor, nombre, contenido" aria-label="q">
               </div>
             </div>
-            <div class="col-md-4 col-sm-12" *ngFor="let d of response">
+            <input [(ngModel)]="searchText" placeholder="search text goes here">
+            <div class="col-md-4 col-sm-12" *ngFor="let d of response | filter : searchText">
               <app-partcomunitaria [ref]="d.link"  [url]="d['_embedded']['wp:featuredmedia'][0]['source_url']"></app-partcomunitaria>
             </div>
        <!--     

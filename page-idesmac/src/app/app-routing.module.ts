@@ -56,6 +56,10 @@ const routes: Routes = [
     component: OrdenamientoComponent
   },
   {
+    path: 'publicacion',
+    component: PartcomunitariaComponent
+  },
+  {
     path: 'prensa',
     component: PrensaComponent
   },

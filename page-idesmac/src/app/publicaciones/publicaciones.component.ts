@@ -1,6 +1,7 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Http, Response } from '@angular/http';
-import * as d3 from 'd3';
+import { Pipe, PipeTransform } from '@angular/core';
+import { FilterPipe } from './filter.pipe';
 
 @Component({
   selector: 'app-publicaciones',
