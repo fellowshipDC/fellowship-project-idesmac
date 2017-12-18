@@ -1,34 +1,27 @@
-<div class="container-fluid banner">
-  <div class="row">
-    <div class="col-12 text-center">
-        <h1>PUBLICACIONES</h1>
-    </div>
-  </div>
-</div>
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-4">
-      <app-lateral-pub></app-lateral-pub>
-    </div>
-    <div class="col-8">
-      <div class="row">
-          <div class="col-md-6">
-              <div class="input-group input-group-lg">
-                <input (keyup)="onKey($event)" type="text" class="form-control" placeholder="Buscar por... autor, nombre, contenido" aria-label="q">
-              </div>
-            </div>
-            <input [(ngModel)]="searchText" placeholder="search text goes here">
-            <div class="col-md-4 col-sm-12" *ngFor="let d of response | filter : searchText">
-              <app-partcomunitaria [ref]="d.link"  [url]="d['_embedded']['wp:featuredmedia'][0]['source_url']"></app-partcomunitaria>
-            </div>
-       <!--     
-       <div class="col-6" *ngFor="let d of data">
-          <img src="{{d['_embedded']['wp:featuredmedia'][0]['source_url']}}">
-          <p>{{d.title.rendered}}</p>
-        </div>-->
-      </div>
-      </div> 
-
-     
-    </div>
+    <div class="row">
+      <div class="col-2">
+        <p class="temas">Temas:</p>
+     <ul class="list-unstyled"> 
+      <li (click)="filterTodo()"><img src="/assets/indent-all.png">Todo</li> 
+      <li (click)="filterAcuerdos()"><img src="/assets/handshake.png"> Acuerdos de Colaboración Teritorial</li>
+      <li (click)="filterCalakmul()"><img src="/assets/cradle-of-humankind.png">Calakmul</li>
+      <li (click)="filterEcoturismo()"><img src="/assets/climbing-silhouette.png">Ecoturismo</li>
+      <li (click)="filterOrdenamiento()"><img src="/assets/landing.png">Ordenamiento Territorial</li>
+      <li (click)="filterOtros()"><img src="/assets/color-palette.png">Otros</li>
+      <li (click)="filterANPC()"><img src="/assets/sprout.png">Red de Áreas Naturales Protegidas Comunitarias</li>
+      <li (click)="filterRiesgo()"><img src="/assets/danger.png">Riesgo</li>
+    </ul>
   </div>
+      <div class="col-10">
+        <div class="row">
+          <div class="col-4" *ngFor="let p of publicacion">
+              <img class="publicaciones" [src]="p['_embedded']['wp:featuredmedia'][0]['source_url']"><p>{{p.title.rendered}}</p>
+
+          </div>
+        </div>
+
+      </div> 
+      
+    </div>
+</div>

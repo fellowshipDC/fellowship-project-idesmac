@@ -1,11 +1,30 @@
-<app-identbann></app-identbann>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-2">
-      <app-identcard></app-identcard>
+    <div class="col-4 menu">
+        <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">¿Quiénes somos?</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">Colaboradores</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">Misión y visión</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">Nuestra historia</a>
+          </div>
     </div>
-    <div class="col-10">
-      <app-quienes></app-quienes>
+    <div class="col-8">
+        <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+            <h4 id="list-item-1">¿Quiénes somos?</h4>
+            <div [innerHtml]="data?.content.rendered">
+            </div>
+            <h4 id="list-item-2">Colaboradores</h4>
+            <p>Socios civiles y sociales
+
+              Socios financiadores</p>
+            <h4 id="list-item-3">Misión y visión</h4>
+            <h1>Misión</h1>
+            <p> Acompañar desde los diversos sures el empoderamiento, social, económico, ambiental, cultural y político de las organizaciones de base,  los pueblos originarios y los movimientos sociales antisistémicos.</p>
+            <h1>Visión</h1>
+            <p>Colaborar como sociedad civil en la construcción de territorios con  gobernanza, equidad y sustentabilidad.</p>
+            <h4 id="list-item-4">Nuestra historia</h4>
+            <p>...</p>
+          </div>
     </div>
   </div>
 </div>

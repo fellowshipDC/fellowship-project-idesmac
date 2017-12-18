@@ -6,7 +6,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { MapBoxModule } from 'angular-mapbox/module';
-import { FilterPipe} from './publicaciones/filter.pipe';
+import { FilterPipe } from './publicaciones/filter.pipe';
+import { NgPipesModule } from 'ngx-pipes';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -91,6 +92,7 @@ import { MapaComponent } from './mapa/mapa.component';
     CalendarModule.forRoot(),
     AppRoutingModule,
     HttpModule,
+    NgPipesModule,
     MapBoxModule.forRoot('pk.eyJ1IjoiZGlmdXNpb24taWRlc21hYyIsImEiOiJjajlmc3kxZG8ycWQxMndzNDJ5OXhxam4wIn0.jaLCQVcQqbBi_EpmYDp0FQ')
   ],
   providers: [],
