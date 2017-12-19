@@ -1,29 +1,73 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-4 menu">
+    <div class="col-2 menu">
         <div id="list-example" class="list-group">
-            <a class="list-group-item list-group-item-action" href="#list-item-1">¿Quiénes somos?</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-2">Colaboradores</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-3">Misión y visión</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-4">Nuestra historia</a>
+            <a class="list-group-item list-group-item-action btn btn-outline-success" href="#list-item-1">¿Quiénes somos?</a>
+            <a class="list-group-item list-group-item-action btn btn-outline-success" href="#list-item-2">Colaboradores</a>
+            <a class="list-group-item list-group-item-action btn btn-outline-success" href="#list-item-3">Misión y visión</a>
+            <a class="list-group-item list-group-item-action btn btn-outline-success" href="#list-item-4">Nuestra historia</a>
+            <a class="list-group-item list-group-item-action btn btn-outline-success" href="#list-item-5">Nuestro equipo</a>
+            <a class="list-group-item list-group-item-action btn btn-outline-success" href="#list-item-6">Líneas Estratégicas</a>
           </div>
     </div>
     <div class="col-8">
         <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
-            <h4 id="list-item-1">¿Quiénes somos?</h4>
-            <div [innerHtml]="data?.content.rendered">
+          <h4 id="list-item-1">¿Quiénes somos?</h4>
+            <div class="texto text-justify item" [innerHtml]="data?.content.rendered">
             </div>
-            <h4 id="list-item-2">Colaboradores</h4>
-            <p>Socios civiles y sociales
+          <h4 id="list-item-2">Colaboradores</h4>
+            <p class="item">Socios civiles y sociales
 
               Socios financiadores</p>
-            <h4 id="list-item-3">Misión y visión</h4>
-            <h1>Misión</h1>
+          <h4 id="list-item-3">Misión</h4>
             <p> Acompañar desde los diversos sures el empoderamiento, social, económico, ambiental, cultural y político de las organizaciones de base,  los pueblos originarios y los movimientos sociales antisistémicos.</p>
-            <h1>Visión</h1>
-            <p>Colaborar como sociedad civil en la construcción de territorios con  gobernanza, equidad y sustentabilidad.</p>
+            <h4>Visión</h4>
+            <p class="item">Colaborar como sociedad civil en la construcción de territorios con  gobernanza, equidad y sustentabilidad.</p>
             <h4 id="list-item-4">Nuestra historia</h4>
-            <p>...</p>
+            <p class="item">El Instituto para el desarrollo sustentable en mesoamérica AC IDESMAC Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+              Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lo</p>
+          <h4 id="list-item-5">Nuestro Equipo</h4>
+              <p class="item">El Instituto para el desarrollo sustentable en mesoamérica AC IDESMAC Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lo</p>
+          <h4 id="list-item-6">Líneas territoriales</h4>
+              <div class="row">
+                <div class="col-4">
+                <img class="altos" src="/assets/ALTOS.png">
+                </div>
+                <div class="col-4">
+                  <img class="catazaja" src="/assets/catazaja1.png">
+                </div>
+                <div class="col-4">
+                    <img class="altos" src="/assets/CALAKMUL.png">
+                </div>
+                <p>El Instituto para el desarrollo sustentable en mesoamérica AC IDESMAC Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            </div>
+            <h4>Líneas temáticas</h4>
+            <div class="row">
+              <div class="col-4">
+                <img class="evaluacion" src="/assets/EVALUACION.png">
+              </div>
+              <div class="col-4">
+                  <img class="olat" src="/assets/OLAT.png">
+                </div>
+              <div class="col-4">
+                    <img class="olat" src="/assets/INNOVACION.png">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <img class="difusion" src="/assets/DIFUSION.png">
+              </div>
+              <div class="col-4">
+                <img class="olat" src="/assets/sit.png">
+              </div>
+              <div class="col-4">
+                <img class="olat" src="/assets/CAE.png">
+              </div>
+            </div>
+            <p>El Instituto para el desarrollo sustentable en mesoamérica AC IDESMAC Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
           </div>
     </div>
   </div>

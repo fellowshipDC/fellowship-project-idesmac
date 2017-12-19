@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response } from '@angular/http';
-
+declare var $: any;
 @Component({
   selector: 'app-identidad',
   templateUrl: './identidad.component.html',
@@ -12,7 +12,7 @@ export class IdentidadComponent implements OnInit {
 
 
   constructor(private http: Http) { }
-  //'div'.scrollspy({ target: '#navbar-example' })
+
 
 getData () {
     this.http.get('http://localhost:8888/wp-json/wp/v2/identidad?_embed')
@@ -23,5 +23,7 @@ getData () {
 
   ngOnInit() {
     this.getData();
+
+    $('.col-8').scrollspy({ target: '#list-example' });
   }
 }
